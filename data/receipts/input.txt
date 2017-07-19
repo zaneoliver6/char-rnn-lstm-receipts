@@ -1,0 +1,119 @@
+10-07-2017
+3 Cabbage  5 15
+7 Cassava   8 56
+1 Corn       10 10
+81
+
+11-06-2017
+2 Coconut     10 20
+2 Cucumber    6 12
+32.00
+
+12-07-2016
+2 Yam 10 20
+4 Corn 5 20
+3 Lemon 2 60
+3 Bread Fruit 5 15
+6 Ginger 2 12
+4 Cabbage 8 12
+2 Basil 3 6
+155
+
+13/07/2017
+
+4 Biocides 25 100
+2 Miticides 20 40
+5 Repellents 10 50
+4 weedicides 30 120
+1 Rodenticides 50 50
+2 Algicides 40 80
+340.00
+
+12/07/2018
+3 corn 5 15
+2 yam 10 20
+2 ginger 2 4
+1 breadfruit 7 7
+2 Bora bean 3 6
+1 Lemon 3 3
+1 watercress 4 4
+2 coconut 10 20
+79
+
+10.04.2018
+2 Yam 12 24
+5 Corn 8 40
+2 BREADFRUIT 6 12
+8 LEMON 3 24
+2 CABBAGE 6 12
+5 GINGER 3 15
+2 BASIL 3 6
+133
+
+02.07.2017
+1 Basil 5 5
+4 Corn 16 64
+2 Watercress 20 40
+8 breadfruit 30 240
+11 lemons 7 77
+3 yam 30 90
+516
+
+03-02-18
+2 Miticides 6 12
+4 Ovicides 7 28
+10 weedicide 4 40
+20 Ginger 30 600
+680
+
+16-01-17
+2 cabbage 6 12
+3 breadfruit 12 36
+10 ginger 15 150
+1 repellents 25 25
+5 coconut 5 25
+3 yam 30 90
+336
+
+15-06-2017
+10 bora brean 20 200
+40 lemons 6 240
+440
+
+6/5/18
+12 Breadfruit 6 72
+6 coconuts 10 60
+1 ginger 8 8
+12 lemon 3 36
+3 Cabbage 5 15
+10 Yam 7 70
+6 Corn 15 90
+2 pakchoy 7 14
+365
+
+2017-04-12
+4 Banana 4 16
+3 Broccoli 13 39
+2 Cabbage 8 16
+71
+
+26/07/2015
+50kg 12-24-12 Fertilizer 200
+500 Hot pepper seeds 500
+700
+
+14/12/18
+2 bags chicken manure 200
+50 oz Microbial pesticides 100
+300
+
+2017-07-08
+10 Antimicrobials 5 50
+7 Fungicides 2 14
+64
+
+2016-08-13
+2 L fungicide 30 60
+1 bag plant booster 70 70
+10 corn 3 30
+160
