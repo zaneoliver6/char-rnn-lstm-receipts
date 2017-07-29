@@ -35,7 +35,7 @@ def sample(args):
 
         chars=[' ', '\n', '0', '1', '2', 'e', 'i', 'a', '5', '3', 'r', '6', 'n', '4', 'o', '7', 'c', 's', 'b',
                't', '-', 'd', 'g', '8', 'l', 'm', 'u', 'C', 'B', '/', 'p', '.', 'A', 'L', 'R', 'G', '9', 'f',
-               'E', 'M', 'y', 'F', 'w', 'Y', 'I', 'k', 'N', 'h', 'z', 'v', 'O', 'U', 'W', 'H', 'T', 'D', 'S']
+               'E', 'M', 'y', 'F', 'w', 'Y', 'I', 'k', 'N', 'h', 'z', 'v', 'O', 'U', 'W', 'H', 'T', 'D']
     model = Model(saved_args, training=False)
     with tf.Session() as sess:
         tf.global_variables_initializer().run()

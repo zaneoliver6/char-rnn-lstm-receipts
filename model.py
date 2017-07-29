@@ -25,7 +25,7 @@ class Model():
 
         self.cell = cell = rnn.MultiRNNCell(cells, state_is_tuple=True)
 
-        self.input_data = tf.placeholder(tf.int32, [args.batch_size, args.seq_length],name="input_data")
+        self.input_data = tf.placeholder(tf.int32, [args.batch_size, args.seq_length],"input_data")
         self.targets = tf.placeholder(tf.int32, [args.batch_size, args.seq_length])
         self.initial_state = cell.zero_state(args.batch_size, tf.float32)
 
@@ -77,6 +77,7 @@ class Model():
 
     def sample(self, sess, chars, vocab, num=200, prime='The ', sampling_type=1):
         state = sess.run(self.cell.zero_state(1, tf.float32))
+        # print(np.ndim(state))
         for char in prime[:-1]:
             x = np.zeros((1, 1))
             x[0, 0] = vocab[char]
@@ -87,26 +88,29 @@ class Model():
         def weighted_pick(weights):
             #print('weights',weights)
             t = np.cumsum(weights)
-            #print('t:',t)
+            # print('t:',t)
             s = np.sum(weights)
-            #print('s:',s)
+            # print('s:',s)
+            # print(np.random.rand(1)*s)
             return(int(np.searchsorted(t, np.random.rand(1)*s)))
 
         ret = prime
         char = prime[-1]
         for n in range(num):
             x = np.zeros((1, 1))
-            print("\n\n")
-            print('x',x)
-            print('char: ', char)
+            # print("\n\n")
+            # print('x',x)
+            # print('char: ', char)
             x[0, 0] = vocab[char]
-            print('vocab: ', vocab)
-            print('vocab[char]', vocab[char])
-            print('x[0,0]:',x)
+            # print('vocab: ', vocab)
+            # print('vocab[char]', vocab[char])
+            # print('x[0,0]:',x)
             feed = {self.input_data: x, self.initial_state: state}
             [probs, state] = sess.run([self.probs, self.final_state], feed)
             p = probs[0]
-            #print("probs:", p)
+            # print(state)
+            # print("probs:", p)
+            # print("len p: " ,len(p))
 
             if sampling_type == 0:
                 sample = np.argmax(p)
@@ -117,11 +121,11 @@ class Model():
                     sample = np.argmax(p)
             else:  # sampling_type == 1 default:
                 sample = weighted_pick(p)
-                print('sample',sample)
+                # print('sample',sample)
 
-            print('chars:', chars)
+            # print('chars:', chars)
             pred = chars[sample]
-            print('pred: ', pred)
+            # print('pred: ', pred)
             ret += pred
             char = pred
         return ret
